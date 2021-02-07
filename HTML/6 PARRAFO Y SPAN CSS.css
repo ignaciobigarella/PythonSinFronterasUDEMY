@@ -1,0 +1,11 @@
+body {
+   background-color: #efefef; 
+}
+
+#parrafo { /* Seleccionar por ID */
+   color: #ff0000;
+}
+
+.etiqueta { /* Seleccionar por clase */
+   color: #00aa00;
+}

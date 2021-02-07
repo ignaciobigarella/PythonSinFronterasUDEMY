@@ -1,0 +1,16 @@
+body {
+    background-color: #eee;
+}
+
+img {
+    float: left; /* Texto a la derecha de imagen */
+}
+
+img:hover {
+    opacity: 0.5; /* Opacidad de 0 a 1 para imagenes y texto */
+}
+
+div p {
+    color: #F00;
+}
+

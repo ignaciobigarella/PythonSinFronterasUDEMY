@@ -1,0 +1,21 @@
+body {
+    background-color: #eee;
+}
+
+.caja {
+    margin: 8px; /* Separacion entre cajas, x fuera */
+    padding: 8px; /* Solo se puede ver con fondos de color, x dentro */
+    border-style: inset; /* Borde entre medio de ambos */
+    /* Puede ser solid, dashed, dotted, double, groove, ridge, inset, outset */ 
+    border-width: 8px;
+    border-color: #faa;
+    background-color: #aaf;
+    border-left: 6px inset #afa;
+    border-bottom: 6px inset #faa;
+    border-right: 6px inset #afa;
+    border-top: 6px inset #faa;
+    border-radius: 8px;  
+    height: 100px;
+    width: 100px;
+    color: #575;
+}

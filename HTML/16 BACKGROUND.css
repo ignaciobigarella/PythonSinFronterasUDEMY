@@ -1,0 +1,21 @@
+body {
+    background-color: #eee;
+}
+
+.fondo {
+    height:400px;
+    background-color: red;
+    background-image: url("http://placekitten.com/200/300");
+    background-repeat: no-repeat; /* Repeat-x y repeat-y */
+    background-position: left top;
+    background-attachment: fixed; /* Bajar cuando se scrollea */
+    background-size: cover;
+}
+
+/* Se puede indicar todo en background: pero en ese orden, excepto size */
+
+.fondo1{
+    background-color: rgba(0,0,255,0.3);
+}
+
+/* background-color: hsl() (Color, saturacion%, brillo%) */

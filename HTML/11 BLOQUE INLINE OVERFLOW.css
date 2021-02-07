@@ -1,0 +1,24 @@
+body {
+    background-color: #eee;
+}
+
+p {
+    max-width: 350px; /* Width define el ancho y max el maximo */
+    background-color: #fff;
+    margin: auto;
+    position: fixed; /* Fijo en la pantalla */
+    left: 200px;
+}
+
+#invisible {
+    display: none; /* Block o inline */
+}
+
+#over {
+    width: 100px;
+    height: 100px;
+    overflow-y: auto; /*  HIDDEN Todo lo que no este en la caja no se ve 
+    Visible Por defecto. SCROLL barra de scroll. AUTO barras si necesita 
+    overflow-y o -x Fuerza el eje */ 
+}
+
