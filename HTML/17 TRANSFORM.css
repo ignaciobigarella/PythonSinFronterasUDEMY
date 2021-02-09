@@ -1,0 +1,47 @@
+body {
+    background-color: #eee;
+}
+
+
+/* Transform si o si va con display: BLOCK */
+/* BOX */
+
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    transform: rotate(20deg); /* DEG SON GRADOS / X Y PARA 3D*/
+    transform: translate(50px, 10px, 20deg); /* SE MUEVE LA CAJA X Y GRADOS */
+    transform: scale(1, 1); /* se puede seleccionar X e Y */
+    transform: skewX(5deg); /* Se inclinan los costados segun X e Y */
+}
+
+.box:hover {
+    background-color: #eff;
+    cursor: pointer;
+    transform: skewX(5deg);
+    transform: scale(1.05, 1.05); /* Crece cuando le pasas encima */
+}
+
+/* ANIMACIONES */
+
+.box2 {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    transition: 0.3s; /* Transition-delay retrasa */
+}
+
+.box2:hover {
+    transform: scale(1.50, 1.50) rotatez(20deg);
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
