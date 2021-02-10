@@ -1,0 +1,48 @@
+body {
+    background-color: #eee;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row; /* Row reverse cambia orientacion /
+    Row por defecto / Column para abajo / Column reverse cambia orientacion */
+    flex-wrap: wrap; /* nowrap por defecto, wrap envolver contenido 
+    wrap-reverse cambia orientacion */
+    /* Con flex-flow primer valor direction y segundo wrap  */
+    justify-content: space-evenly;
+    /* align-items: stretch; */ /* Flex-end hijos directos desplazados hacia 
+    arriba, center alinea en el medio, stretch usa todo el alto 
+    Flex-start por defecto */
+    height: 200px;
+    align-content: space-between; /* Flex-start por defecto, center,
+     fled-end, space-between, space-around */
+}
+
+.red {
+    background-color: red;
+}
+
+.flex2 {
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+}
+
+.primero {
+    /* order: 1; */ /* Mayor valor de order al final, si todos tienen valor 0
+    se ordenan como se escriben. Menor número al principio */
+    flex-grow: 1; /* 0 por defecto */
+    flex-basis: 120px; /* Ancho inicial al elemento y el resto del
+    contenido se reparte con flex grow */
+    /* Flex: Grow Basis; */
+}
+
+.tercero {
+    /* order: 0; */
+    flex-grow: 2;
+    align-self: flex-end;
+}
+
+.segundo {
+    flex-grow: 1;
+}

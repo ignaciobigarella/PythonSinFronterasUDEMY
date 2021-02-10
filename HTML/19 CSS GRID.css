@@ -1,0 +1,86 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #eee;
+    margin: 0px;
+    height: 100%;
+}
+
+/* Introduccion a grids */
+
+.grid {
+    display: grid; /* Despliega elementos como grilla grid o inline-greed */
+    grid-template-rows: 90px 90px; /* tamaño primera fila y siguientes 
+    altura automatica de los elementos dentro */
+    grid-template-columns: 90px 50px 120px;
+    /* definicion de columnas cantidad y ancho se puede usar px o fr
+    (todo el ancho fraccionado) o rem o % */
+}
+
+.element {
+    background-color: red;
+}
+
+
+.grid2 {
+    display: grid;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-columns: minmax(auto, 50%) 1fr 3em;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-rows: repeat(2, 50px); /* Cantidad de filas y tamaño */
+    grid-template-columns: 30px repeat(3, 1fr) 15px;  /* Cant columnas y tamaño 
+    si agregamos pixeles al principio y final cambiamos valor de estas
+    columnas o filas */
+    grid-gap: 15px; /* rows columns se pueden asignar dos valores */
+}
+
+.grid4{
+    display: grid;
+    grid-template-rows: repeat(2, [row-start] 50px [row-end]);
+    grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+    /* Nombrar columnas y filas con su tamaño */
+    grid-gap: 15px;
+}
+.header {
+    grid-column: col-start / col-end 3; /* start y end */
+    grid-row: row-start / row-end 3; /* start y end */
+}
+
+/* Distribucion del contenido en el sitio web */
+
+.grid5 {
+    display: grid;
+    grid-template-areas:"header header"
+                        "content sidebar"
+                        "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;   
+    grid-auto-rows: 140px; /* Grilla implicita */
+    grid-auto-flow: row; /* Row por defecto column aparece de izq a der */
+    justify-items: stretch; /* Puede ser center start (dfct) end o stretch */
+    align-items: end; /* Stretch por defecto tmb center y end*/   
+    /* Justify-self y align-self para cada elemento */                 
+}
+
+.red {
+    background-color: red;
+}
+
+.grid6 {
+    display: grid;
+    width: 100%;  
+    height: 100%;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(4, 50px);
+    grid-gap: 5px;
+    justify-content: start; /* Desplazar toda la grilla 
+    puede ser space-between o space-around space-evenly
+    o start, end, center */
+    align-content: center; /* HTML HEIGHT 100% Y BODY TMB igual que 
+    justify content */  
+}
